@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklist JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#btnAdd').click(function()
+        {
+            var newbook = $('#txtNewBook').val();
+            $('#DOLbook').append(new Option(newbook, newbook));
+        }
+    </script>
+  </head>
+
+  <body>
+    New Book Name : <input type="text" id="new_book" name="new_book" class="form-control"/>
+        <br/>
+
+        All books: 
+        <select id="DOLbook">
+            <option value="">SelectResults</option>
+          </select>
+
+          <br/>
+
+          <input type="button" value="ADD BOOK" id="btnAdd" />
+  </body>
+
+</html>
